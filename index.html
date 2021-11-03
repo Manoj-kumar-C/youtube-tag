@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Tag Finder ..</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background: linear-gradient(to right, aqua, beige);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        footer{
+            margin-top: 10rem;
+        }
+        kbd{
+            padding: 0.5rem;
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .container1{
+            background-color: azure;
+            width:80%;
+            margin-top: 2rem;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 0.3rem;
+            border-radius: 0.8rem;
+            min-height: 10rem;
+            max-height: none;
+        }
+        textarea{
+            width: 65%;
+            min-height: 5rem;
+            max-height: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="text-center text-danger">Youtube Tag Finder</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/tagfinder" method="post">
+            <div class="form-group">
+                <label for="url" class="text-center">Youtube Url</label>
+                <input type="text" name="url" id="" placeholder="Enter The URL" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Get Tags</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="copy-to-clipboard">
+        <div class="container1">
+            <h1 class="text-center text-dark">Copy To ClipBoard</h1>
+
+            <form spellcheck="false">
+                <textarea id="tagsForm" ></textarea>
+            </form>
+        </div>
+    </div>
+    <footer class="text-center">
+        <kbd>Made by MANOJKUMAR </kbd>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+         
+    </script>
+</body>
+</html>
